@@ -1,3 +1,42 @@
+/* mobile-first */
+@media screen and (min-width: 400px) and (max-width: 767px){
+    .layoutMain-Contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 30% 30% 30% 50%;
+        grid-template-areas:
+            "titulo"
+            "formulario"
+            "telefono"
+            "correo"
+            "direccion"
+            "maps"
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023) {
+    .layoutMain-Contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 40% 40% 40% 70%;
+        grid-template-areas:
+            "titulo"
+            "formulario"
+            "telefono"
+            "correo"
+            "direccion"
+            "maps"
+    }
+}
+@media screen and (min-width: 1024px){
+    .layoutMain-Contacto{
+        grid-template-columns: 40em 40em;
+        grid-template-rows: 6em 10em 10em 10em 10em;
+        grid-template-areas: 
+        "titulo titulo"
+        "formulario formulario"
+        "formulario formulario"
+        "formulario formulario"
+        "maps maps";
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
     margin: 0 auto;
@@ -48,14 +87,6 @@ footer {
 }
 .layoutMain-Contacto {
     display: grid;
-    grid-template-columns: 40em 40em;
-    grid-template-rows: 6em 10em 10em 10em 10em;
-    grid-template-areas: 
-    "titulo titulo"
-    "formulario formulario"
-    "formulario formulario"
-    "formulario formulario"
-    "maps maps";
     grid-gap: 1em;
     width: 100vh;
 }
