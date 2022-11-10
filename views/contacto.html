@@ -12,7 +12,7 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header>
+    <header class="layoutHeader">
         <nav>
             <a href="../index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100.000000pt" height="80.000000pt" viewBox="0 0 267.000000 189.000000" preserveAspectRatio="xMidYMid meet">
@@ -56,33 +56,35 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main  class="layoutMain-Contacto">
+        <section class="tituloContacto">
             <h1>Contactá con el  Club</h1>
         </section>
         <section>
-            <form action="">
-                <label for="nombreApellido">Nombre y Apellido</label>
-                <input type="text" id="nombreApellido" name="nombre-apellido">
-                <label for="correoElectronico">Correo electrónico</label>
-                <input type="text" id="correoElectronico" name="correo-electronico">
-                <label for="contactoClub">Escribe aquí tu consulta</label>
-                <textarea name="contacto-club" id="contactoClub" cols="30" rows="10"></textarea>
-                <input type="submit" value="ENVIAR">
-            </form>
-            <div>
+            <div  class="formularioContacto">
+                <form action="">
+                    <label for="nombreApellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreApellido" name="nombre-apellido">
+                    <label for="correoElectronico">Correo electrónico</label>
+                    <input type="text" id="correoElectronico" name="correo-electronico">
+                    <label for="contactoClub">Escribe aquí tu consulta</label>
+                    <textarea name="contacto-club" id="contactoClub" cols="30" rows="10"></textarea>
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </div>
+            <div class="telefonoContacto">
                 <h3>Teléfono de administración</h3>
                 <p>
                     <a href="tel:+5493517578844">(351) 757-8844</a>
                 </p>
             </div>
-            <div>
+            <div class="correoContacto">
                 <h3>Correo de administración</h3>
                 <p>
                     <a href="mailto:cpladministracion@gmail.com" target="_blank">cpladministracion@gmail.com</a>
                 </p>
             </div>
-            <div>
+            <div class="direccionContacto">
                 <h3>Dirección</h3> 
                 <p>
                     <a href="https://www.google.com/maps/place/Club+Social+y+Deportivo+Poeta+Lugones/@-31.35964,-64.225528,17z/data=!3m1!4b1!4m5!3m4!1s0x9432993edfc06cd3:0x91ab7b3541f7a227!8m2!3d-31.3595527!4d-64.2233173?hl=es" target="_blank">Av. Roberto Cayol 3800, Córdoba</a>
@@ -90,11 +92,13 @@
             </div>
         </section>
         <section>
-            <h2>¿Queres conocer nuestro Club?</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13627.904217192352!2d-64.2233393!3d-31.35964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91ab7b3541f7a227!2sClub%20Social%20y%20Deportivo%20Poeta%20Lugones!5e0!3m2!1ses!2sar!4v1666142039817!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="mapsContacto">
+                <h2>¿Queres conocer nuestro Club?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13627.904217192352!2d-64.2233393!3d-31.35964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91ab7b3541f7a227!2sClub%20Social%20y%20Deportivo%20Poeta%20Lugones!5e0!3m2!1ses!2sar!4v1666142039817!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="layoutFooter">
         <p>Copyright © 2022 Poeta. All rights reserved.</p>
         <nav>
             <a href="https://es-la.facebook.com/cpl.oficial/" target="_blank"> 
