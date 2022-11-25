@@ -1,0 +1,130 @@
+/* mobile-first */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .layoutMain-Contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 30% 30% 30% 50%;
+    grid-template-areas: "titulo" "formulario" "telefono" "correo" "direccion" "maps";
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023) {
+  .layoutMain-Contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 40% 40% 40% 70%;
+    grid-template-areas: "titulo" "formulario" "telefono" "correo" "direccion" "maps";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .layoutMain-Contacto {
+    grid-template-columns: 40em 40em;
+    grid-template-rows: 6em 10em 10em 10em 10em;
+    grid-template-areas: "titulo titulo" "formulario formulario" "formulario formulario" "formulario formulario" "maps maps";
+  }
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header nav {
+  background-color: #F2E305;
+}
+
+header nav ul {
+  display: inline;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 1em;
+}
+
+footer {
+  background-color: #F2E305;
+}
+
+.articulo {
+  background-color: #2B994E;
+  height: 20em;
+  padding: 1em 3em;
+  margin: 1em;
+  border: solid 0.3em;
+  border-radius: 1em;
+}
+
+.imgUtilero {
+  height: 20em;
+}
+
+.h1Inicio {
+  font-size: 3.75rem;
+  text-align: center;
+}
+
+.h2Inicio {
+  font-size: 2.5rem;
+  background-color: lightgray;
+}
+
+.h3Inicio {
+  font-size: 1.5rem;
+}
+
+.layoutMain-Contacto {
+  display: grid;
+  grid-gap: 1em;
+  width: 100vh;
+}
+
+.tituloContacto {
+  grid-area: titulo;
+}
+
+.formularioContacto {
+  grid-area: formulario;
+}
+
+.telefonoContacto {
+  grid-area: telefono;
+}
+
+.correoContacto {
+  grid-area: correo;
+}
+
+.direccionContacto {
+  grid-area: direccion;
+}
+
+.mapsContacto {
+  grid-area: maps;
+}
+
+.layoutHeader {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul li {
+  list-style-type: none;
+  margin-right: 1em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #F2F2F2;
+}/*# sourceMappingURL=main.css.map */
